@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      data-auto-replace-svg="nest"
+    ></script>
+    <!-- .....................................................     -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./styles/navvar.css" />
+    <link rel="stylesheet" href="./styles/cardC.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+  </head>
+  <body onload="sendDATA(`<%= JSON.stringify(products)%>`)">
+    <div id="container"></div>
+
+    <!-- <div id="nav1">
+      <a href=""
+        ><p id="nav1t">
+          Asia's first brand with MADE SAFE certified products
+        </p></a
+      >
+      <a href=""
+        ><p id="navt">
+          Free Shippping above 399 | COD Available | Ertra 5% OFF on prepaid
+          orders | Shop Now
+        </p></a
+      >
+      <i class="far fa-user"></i>
+    </div>
+    <div id="nav2">
+      <img
+        id="logo"
+        src="https://media.loylty.com/movies/bannerimg_20210730184309563.jpg"
+      />
+      <div id="nav2s">
+        <input
+          id="srch"
+          type="text"
+          placeholder="Search for products.."
+        /><button id="btn"><i class="fas fa-search"></i>Search</button>
+      </div>
+      <span><i class="fas fa-shopping-cart fa-lg"></i> Cart</span>
+
+      <span> <i class="fas fa-user-alt fa-lg"></i> Login </span>
+    </div> -->
+    <!-- .....................................NAV 3............................................. -->
+    <!-- <div id="nav3">
+      <p id="homet">HOME</p>
+
+      <div class="dropdown">
+        <p>BABY</p>
+        <div class="dropdown-content">
+          <ul>
+            <li class="bold">Explore</li>
+            <li>New Launchers</li>
+            <li>Best Sellers</li>
+            <li>combos</li>
+            <li>Gift Packs</li>
+          </ul>
+
+          <ul>
+            <li class="bold">Baby</li>
+            <li>Baby Shampoo</li>
+            <li>Baby Oralcare</li>
+            <li>Baby Oil</li>
+            <li>Baby Skin</li>
+            <li>Baby Bath</li>
+            <li>Baby Diaper</li>
+          </ul>
+
+          <ul>
+            <li class="blue">See All</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="beauty" class="dropdown">
+        <p>BEAUTY</p>
+        <div class="dropdown-content">
+          <ul>
+            <li class="bold">Explore</li>
+            <li>New Launchers</li>
+            <li>Best Sellers</li>
+            <li>combos</li>
+            <li>Gift Packs</li>
+          </ul>
+
+          <ul>
+            <li class="bold">Beauty</li>
+            <li>Face</li>
+            <li>Hair</li>
+            <li>Body</li>
+          </ul>
+
+          <ul>
+            <li class="blue">See All</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="hair" class="dropdown">
+        <p>HAIR</p>
+        <div class="dropdown-content">
+          <ul>
+            <li class="bold">Explore</li>
+            <li>New Launchers</li>
+            <li>Best Sellers</li>
+            <li>combos</li>
+            <li>Gift Packs</li>
+          </ul>
+
+          <ul>
+            <li class="bold">Hair</li>
+            <a id="shampoo" href="Products.html"><li>Shampoo</li></a>
+            <li>conditioner</li>
+            <li>Hair Oil</li>
+            <li>Hair Mask</li>
+            <li>Hair Serum</li>
+          </ul>
+
+          <ul>
+            <li class="blue">See All</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="face" class="dropdown">
+        <p>FACE</p>
+        <div class="dropdown-content">
+          <ul>
+            <li class="bold">Explore</li>
+            <li>New Launchers</li>
+            <li>Best Sellers</li>
+            <li>combos</li>
+            <li>Gift Packs</li>
+          </ul>
+
+          <ul>
+            <li class="bold">Face</li>
+            <li>Face Wash</li>
+            <li>Face Mask</li>
+            <li>Face Cream</li>
+            <li>Face Serum</li>
+            <li>Face Scrum</li>
+            <li>Face Toner</li>
+            <li>Face Gel</li>
+            <li>Face Sheet Mask</li>
+          </ul>
+
+          <ul>
+            <li class="blue">See All</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="body" class="dropdown">
+        <p>BODY</p>
+        <div class="dropdown-content">
+          <ul>
+            <li class="bold">Explore</li>
+            <li>New Launchers</li>
+            <li>Best Sellers</li>
+            <li>combos</li>
+            <li>Gift Packs</li>
+          </ul>
+
+          <ul>
+            <li class="bold">Bodyy</li>
+            <li>Body Butter</li>
+            <li>Body Wash</li>
+            <li>Body Lotion</li>
+            <li>Body Scrub</li>
+            <li>Hand Cream</li>
+          </ul>
+
+          <ul>
+            <li class="blue">See All</li>
+          </ul>
+        </div>
+      </div>
+
+      <p id="gift" class="hometxt">GIFT PACKS</p>
+      <p class="hometxt">ALL PRODUCTS</p>
+      <p class="hometxt">BLOG</p>
+      <p class="hometxt">PLANT GOODNESS</p>
+      <p class="hometxt">STORE LOCATOR</p>
+    </div> -->
+    <!-- ................................CAROUSELS................................. -->
+    <!-- <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-interval="2000">
+          <img
+            src="https://images.ctfassets.net/66mrrren2unf/5OhEUHOLxFpTkjZ2Zk2Y4S/f1ccaaf5d228df39ccd858841b23d997/Desktop.jpg?q=40"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item" data-interval="2000">
+          <img
+            src="https://images.ctfassets.net/66mrrren2unf/4I2Ji1TxrGoZUZi1LpO9lb/945ef7e2040f21de43c0f327ead451b5/desktop-body-lotion.jpg?q=40"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item" data-interval="2000">
+          <img
+            src="https://images.ctfassets.net/66mrrren2unf/62fMX7z3RN55j8FpWnIxhg/1a194a111a058b377248805cdea8449d/Desktop_Without_CTA.jpg?q=40"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item" data-interval="2000">
+          <img
+            src="https://images.ctfassets.net/66mrrren2unf/rBK093QawZY4YOdbxSjHJ/7bac4d18e5638b28b13a27315564b14d/Desktop.jpg?q=40"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleInterval"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleInterval"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div> -->
+    <!-- ..................................BEST SELLERS................................. -->
+    <div class="main">
+      <div class="bestsl">
+        <p class="bs">Best Sellers</p>
+        <p class="bst">
+          Explore best-selling safe, natural, and 100% toxin-free baby and
+          beauty products from Mamaearth. Get amazing deals and start your
+          toxin-free skin, hair, and baby care journey.
+        </p>
+        <button class="bstb">VIEW ALL</button>
+      </div>
+      <div class="bestsr">
+        <div class="wrapper myContainer">
+          <div id="itemCarousel" class="carousel owl-carousel"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="bestsl">
+        <p class="bs">Onion Range</p>
+        <p class="bst">
+          Explore 100% toxin-free and safe Onion Range for Hair Fall, formulated
+          with the goodness of natural ingredients and no harmful chemicals.
+        </p>
+        <button class="bstb">VIEW ALL</button>
+      </div>
+      <div class="bestsr">
+        <div class="wrapper myContainer">
+          <div id="itemCarousel2" class="carousel owl-carousel"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="bestsl">
+        <p class="bs">Vitamin C Range</p>
+        <p class="bst">
+          Explore 100% toxin-free and safe Vitamin C Range for Glowing and
+          Radiant Skin, formulated with the goodness of natural ingredients and
+          no harmful chemicals
+        </p>
+        <button class="bstb">VIEW ALL</button>
+      </div>
+      <div class="bestsr">
+        <div class="wrapper myContainer">
+          <div id="itemCarousel3" class="carousel owl-carousel"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="poster">
+      <img width="100%" src="poster.png.png" />
+    </div>
+    <div id="footer"></div>
+
+    <!-- .............................BEST DEALS.......................................... -->
+  </body>
+  <script>
+    function sendDATA(products) {
+      const data = JSON.parse(products);
+      console.log(data);
+      var main = document.getElementsByClassName("main");
+      createCard(data);
+    }
+    // import navbar from "./components/navbar.js";
+
+    // let container = document.getElementById("container");
+
+    // container.innerHTML = navbar();
+
+    // .....................FOOTER IMPORT................................
+    // import Footer from "./components/footer.js";
+    // console.log(Footer);
+
+    // let footer = document.getElementById("footer");
+
+    // footer.innerHTML = Footer();
+
+    // <!-- ..............................SECOND CARSOULES...................................... -->
+    const data = JSON.parse(localStorage.getItem("mamaEarthProducts")) || [];
+    const itemCarousel = document.getElementById("itemCarousel");
+    const itemCarousel2 = document.getElementById("itemCarousel2");
+    const itemCarousel3 = document.getElementById("itemCarousel3");
+    data.map((item) => {
+      createCard(
+        item.title,
+        item.imgUrl[0],
+        item.category,
+        item.price,
+        item.id,
+        item.rating,
+        1
+      );
+
+      createCard(
+        item.title,
+        item.imgUrl[0],
+        item.category,
+        item.price,
+        item.id,
+        item.rating,
+        2
+      );
+
+      createCard(
+        item.title,
+        item.imgUrl[0],
+        item.category,
+        item.price,
+        item.id,
+        item.rating,
+        3
+      );
+    });
+    function createCard(
+      title,
+      imgUrl,
+      category,
+      price,
+      id,
+      rating,
+      selectItem
+    ) {
+      const div = document.createElement("div");
+      div.setAttribute("class", "myCard card card-1");
+      div.innerHTML = `<img
+                    src="${imgUrl}"
+                    alt=""
+                  />
+                  <p>
+                   ${title}
+                  </p>
+                  <span></span>
+                  <p>
+                    <span id="price">&#8377; 690</span>
+                    <span id="actualPrice">&#8377; ${price}</span> |
+                    <span id="offer">(3% off)</span>
+                  </p>
+                  <button>Add To Cart</button>
+                `;
+      if (selectItem == 1) {
+        itemCarousel.append(div);
+      } else if (selectItem == 2) {
+        itemCarousel2.append(div);
+      } else if (selectItem == 3) {
+        itemCarousel3.append(div);
+        console.log(itemCarousel3);
+      }
+      console.log(selectItem);
+    }
+    $("#itemCarousel").owlCarousel({
+      margin: 20,
+      loop: false,
+      autoplay: false,
+      responsive: {
+        1000: {
+          items: 3,
+          nav: true,
+        },
+      },
+    });
+
+    $("#itemCarousel2").owlCarousel({
+      margin: 20,
+      loop: false,
+      autoplay: false,
+      responsive: {
+        1000: {
+          items: 3,
+          nav: true,
+        },
+      },
+    });
+
+    $("#itemCarousel3").owlCarousel({
+      margin: 20,
+      loop: false,
+      autoplay: false,
+      responsive: {
+        1000: {
+          items: 3,
+          nav: true,
+        },
+      },
+    });
+
+    // ..............................................................................
+  </script>
+</html>

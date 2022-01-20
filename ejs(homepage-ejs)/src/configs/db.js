@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 
 module.exports = connect = () => {
-  return mongoose.connect("mongodb://127.0.0.1:27017/MAMAE_BACK");
+  return mongoose.connect(
+    "mongodb+srv://mamaearth:<mamaearth123>@mamaearth-fullstack.qvqsp.mongodb.net/test"
+  );
 };
