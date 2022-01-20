@@ -18,7 +18,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./styles/navvar.css" />
-    <link rel="stylesheet" href="./styles/cardC.css" />
+    <link rel="stylesheet" href="/css/cardC.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -30,6 +30,7 @@
   <body onload="sendDATA(`<%= JSON.stringify(products)%>`)">
     <div id="container"></div>
 
+    <!-- /////////////////////////////////navvar//////////////////////////////////////////////// -->
     <!-- <div id="nav1">
       <a href=""
         ><p id="nav1t">
@@ -320,7 +321,113 @@
       const data = JSON.parse(products);
       console.log(data);
       var main = document.getElementsByClassName("main");
-      createCard(data);
+      //////////////////////////////////////////////////////////////////////////
+
+      const itemCarousel = document.getElementById("itemCarousel");
+      const itemCarousel2 = document.getElementById("itemCarousel2");
+      const itemCarousel3 = document.getElementById("itemCarousel3");
+      data.map((item) => {
+        createCard(
+          item.title,
+          item.imgUrl[0],
+          item.category,
+          item.price,
+          item.id,
+          item.rating,
+          1
+        );
+
+        createCard(
+          item.title,
+          item.imgUrl[0],
+          item.category,
+          item.price,
+          item.id,
+          item.rating,
+          2
+        );
+
+        createCard(
+          item.title,
+          item.imgUrl[0],
+          item.category,
+          item.price,
+          item.id,
+          item.rating,
+          3
+        );
+      });
+      function createCard(
+        title,
+        imgUrl,
+        category,
+        price,
+        id,
+        rating,
+        selectItem
+      ) {
+        const div = document.createElement("div");
+        div.setAttribute("class", "myCard card card-1");
+        div.innerHTML = `<img
+                    src="${imgUrl}"
+                    alt=""
+                  />
+                  <p>
+                   ${title}
+                  </p>
+                  <span></span>
+                  <p>
+                    <span id="price">&#8377; 690</span>
+                    <span id="actualPrice">&#8377; ${price}</span> |
+                    <span id="offer">(3% off)</span>
+                  </p>
+                  <button>Add To Cart</button>
+                `;
+        if (selectItem == 1) {
+          itemCarousel.append(div);
+        } else if (selectItem == 2) {
+          itemCarousel2.append(div);
+        } else if (selectItem == 3) {
+          itemCarousel3.append(div);
+          console.log(itemCarousel3);
+        }
+        console.log(selectItem);
+      }
+      $("#itemCarousel").owlCarousel({
+        margin: 20,
+        loop: false,
+        autoplay: false,
+        responsive: {
+          1000: {
+            items: 3,
+            nav: true,
+          },
+        },
+      });
+
+      $("#itemCarousel2").owlCarousel({
+        margin: 20,
+        loop: false,
+        autoplay: false,
+        responsive: {
+          1000: {
+            items: 3,
+            nav: true,
+          },
+        },
+      });
+
+      $("#itemCarousel3").owlCarousel({
+        margin: 20,
+        loop: false,
+        autoplay: false,
+        responsive: {
+          1000: {
+            items: 3,
+            nav: true,
+          },
+        },
+      });
     }
     // import navbar from "./components/navbar.js";
 
@@ -337,112 +444,7 @@
     // footer.innerHTML = Footer();
 
     // <!-- ..............................SECOND CARSOULES...................................... -->
-    const data = JSON.parse(localStorage.getItem("mamaEarthProducts")) || [];
-    const itemCarousel = document.getElementById("itemCarousel");
-    const itemCarousel2 = document.getElementById("itemCarousel2");
-    const itemCarousel3 = document.getElementById("itemCarousel3");
-    data.map((item) => {
-      createCard(
-        item.title,
-        item.imgUrl[0],
-        item.category,
-        item.price,
-        item.id,
-        item.rating,
-        1
-      );
-
-      createCard(
-        item.title,
-        item.imgUrl[0],
-        item.category,
-        item.price,
-        item.id,
-        item.rating,
-        2
-      );
-
-      createCard(
-        item.title,
-        item.imgUrl[0],
-        item.category,
-        item.price,
-        item.id,
-        item.rating,
-        3
-      );
-    });
-    function createCard(
-      title,
-      imgUrl,
-      category,
-      price,
-      id,
-      rating,
-      selectItem
-    ) {
-      const div = document.createElement("div");
-      div.setAttribute("class", "myCard card card-1");
-      div.innerHTML = `<img
-                    src="${imgUrl}"
-                    alt=""
-                  />
-                  <p>
-                   ${title}
-                  </p>
-                  <span></span>
-                  <p>
-                    <span id="price">&#8377; 690</span>
-                    <span id="actualPrice">&#8377; ${price}</span> |
-                    <span id="offer">(3% off)</span>
-                  </p>
-                  <button>Add To Cart</button>
-                `;
-      if (selectItem == 1) {
-        itemCarousel.append(div);
-      } else if (selectItem == 2) {
-        itemCarousel2.append(div);
-      } else if (selectItem == 3) {
-        itemCarousel3.append(div);
-        console.log(itemCarousel3);
-      }
-      console.log(selectItem);
-    }
-    $("#itemCarousel").owlCarousel({
-      margin: 20,
-      loop: false,
-      autoplay: false,
-      responsive: {
-        1000: {
-          items: 3,
-          nav: true,
-        },
-      },
-    });
-
-    $("#itemCarousel2").owlCarousel({
-      margin: 20,
-      loop: false,
-      autoplay: false,
-      responsive: {
-        1000: {
-          items: 3,
-          nav: true,
-        },
-      },
-    });
-
-    $("#itemCarousel3").owlCarousel({
-      margin: 20,
-      loop: false,
-      autoplay: false,
-      responsive: {
-        1000: {
-          items: 3,
-          nav: true,
-        },
-      },
-    });
+    // const data = JSON.parse(localStorage.getItem("mamaEarthProducts")) || [];
 
     // ..............................................................................
   </script>
