@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.png">
+    <title>Mamaearth | Official Website | Buy Natural Skin Care Products Online</title>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+    <link rel="stylesheet" href="/css/newNavbar.css">    
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/products.css">  
+    
+</head>
+<body onload="sendDATA(`<%= JSON.stringify(products)%>`)">  
+    <div id="nav">
+        <nav>
+            <div class="navbarCommonToAll">
+        
+            <div id = "navbar1">
+            <a href = ""><p>Asia's first brand with MADE SAFE certified products</p></a>
+            <a href = ""><p id = "navt">Free Shippping above 399 | COD Available | Extra 5% OFF
+                on prepaid orders | Shop Now
+            </p>
+           </a>
+            <span class="iconify" data-icon="bytesize:user"></span>
+            </div>
+        
+        <div id = "nav2">
+            <div id="nav2Logo">
+            <a href="/home/mama"><img id = "logo" src = "https://media.loylty.com/movies/bannerimg_20210730184309563.jpg">
+            </a>
+          </div>
+        
+            <div id = "nav2search">
+                <input id = "srch" type = "text" placeholder = "Search for products.."><button id = "btn"><span class="iconify" style="margin-bottom: -6px;padding-right: 2px; font-size: 22px; color: white;" data-icon="ant-design:search-outlined"></span>Search</button>
+            </div>
+             
+            <div  id="nav2icon1">
+            <a href = "/cart/mama"><span class="iconify" data-icon="bytesize:cart"></span>Cart</a> 
+            </div>
+            <div id="nav2icon2">
+            <a href = "/signup/mama" id="changingName"><span class="iconify" data-icon="bytesize:user"></span>Login</a>
+        </div>
+        </div>
+        <div id = "nav3">
+            <p id="homet">HOME</p>
+            
+            <div class="dropdown"> <p>BABY</p> <div class="dropdown-content">
+                <ul class = "inline">
+                    <li class="bold">Explore</li>
+                    <li>New Launchers</li>
+                    <li>Best Sellers</li>
+                    <li>combos</li>
+                    <li>Gift Packs</li>
+                </ul>
+                
+                <ul class = "inline">
+                    <li class="bold">Baby</li>
+                    <li>Baby Shampoo</li>
+                    <li>Baby Oralcare</li>
+                    <li>Baby Oil</li>
+                    <li>Baby Skin</li>
+                    <li>Baby Bath</li>
+                    <li>Baby Diaper</li>
+                </ul>
+        
+                <ul class = "inline">
+                    <li class="blue">See All</li>
+                </ul>
+            </div> </div>
+        
+            <div  id="beauty" class="dropdown"> <p>BEAUTY</p> <div class="dropdown-content">
+            <ul class = "inline">
+                    <li class="bold">Explore</li>
+                    <li>New Launchers</li>
+                    <li>Best Sellers</li>
+                    <li>combos</li>
+                    <li>Gift Packs</li>
+                </ul>
+        
+                <ul class = "inline">
+                    <li class="bold">Beauty</li>
+                    <li>Face</li>
+                    <li>Hair</li>
+                    <li>Body</li>
+                </ul>
+        
+                <ul class = "inline">
+                    <li class="blue">See All</li>
+                </ul>
+            </div> </div>
+        
+            <div  id="hair" class="dropdown"> <p>HAIR</p> <div class="dropdown-content">
+            <ul class = "inline">
+                    <li class="bold">Explore</li>
+                    <li>New Launchers</li>
+                    <li>Best Sellers</li>
+                    <li>combos</li>
+                    <li>Gift Packs</li>
+                </ul>
+        
+                <ul class = "inline">
+                    <li class="bold">Hair</li>
+                    <a id="shampoo" href="/product/mama"><li>Shampoo</li></a>
+                    <li>conditioner</li>
+                    <li>Hair Oil</li>
+                    <li>Hair Mask</li>
+                    <li>Hair Serum</li>
+                </ul>
+        
+                <ul class = "inline">
+                    <li class="blue">See All</li>
+                </ul>
+            </div> </div>
+        
+            <div  id="face" class="dropdown"> <p>FACE</p> <div class="dropdown-content">
+            <ul class = "inline">
+                    <li class="bold">Explore</li>
+                    <li>New Launchers</li>
+                    <li>Best Sellers</li>
+                    <li>combos</li>
+                    <li>Gift Packs</li>
+                </ul>
+        
+                <ul class = "inline">
+                    <li class="bold">Face</li>
+                    <li>Face Wash</li>
+                    <li>Face Mask</li>
+                    <li>Face Cream</li>
+                    <li>Face Serum</li>
+                    <li>Face Scrum</li>
+                    <li>Face Toner</li>
+                    <li>Face Gel</li>
+                    <li>Face Sheet Mask</li>
+                </ul>
+        
+                <ul class = "inline">
+                    <li class="blue">See All</li>
+                </ul>
+            </div> </div>
+        
+            <div  id="body" class="dropdown"> <p>BODY</p> <div class="dropdown-content">
+            <ul class = "inline">
+                    <li class="bold">Explore</li>
+                    <li>New Launchers</li>
+                    <li>Best Sellers</li>
+                    <li>combos</li>
+                    <li>Gift Packs</li>
+                </ul>
+        
+                <ul class = "inline">
+                    <li class="bold">Bodyy</li>
+                    <li>Body Butter</li>
+                    <li>Body Wash</li>
+                    <li>Body Lotion</li>
+                    <li>Body Scrub</li>
+                    <li>Hand Cream</li>
+                </ul>
+        
+                <ul class = "inline">
+                    <li class="blue">See All</li>
+                </ul>
+            </div> </div>
+        
+            <p id="gift" class="hometxt">GIFT PACKS</p>
+            <p class="hometxt">ALL PRODUCTS</p>
+            <p class="hometxt">BLOG</p>
+            <p class="hometxt">PLANT GOODNESS</p>
+            <p class="hometxt">STORE LOCATOR</p>
+        </div> 
+        
+        </div>
+        
+          </nav>
+    </div>
+
+
+    <div id="shilpa">  <img width="100%"
+        src="https://images.ctfassets.net/66mrrren2unf/62fMX7z3RN55j8FpWnIxhg/1a194a111a058b377248805cdea8449d/Desktop_Without_CTA.jpg?q=40"/> </div>
+
+    <div class="PC-Product-Page">
+ 
+        <div class="sortingDiv">
+            <select id="sortByValue" onchange="sortBy(`<%= JSON.stringify(products)%>`)">
+                <option value="default">Sort By</option>
+                <option value="rate">Rating</option>
+                <option value="high">Price-High to Low </option>
+                <option value="low">Price-Low to High </option>                
+            </select>
+        </div>
+        <div id="main">          
+        </div> 
+    </div>   
+
+
+    <h1>FAQ'S</h1>
+<div class="mine">
+<button class="accordion">Can I Use Mama Earth Shampoo Daily ?  <i class="fas fa-chevron-down fa-lg"></i> </button>
+<div class="panel">
+  <p>YESS definitely! Mamaearth shampoos are so good as they are free of harmful chemicals and keeps hair healthy, strong and nourished.</p>
+</div>
+
+<button class="accordion">Which is the Best Shampoo for Dandruff ? <i class="fas fa-chevron-down fa-lg"></i> </button>
+<div class="panel">
+  <p>Mamaearth Tea Tree Shampoo is made using natural ingredients and makes sure that dandruff and excess oil is gently worked on & removed. It helps soothe irritating, oily, and flaky scalp by controlling dandruff; thus, giving you an itch-free healthy scalp and nourished hair.
+    </p>
+</div>
+
+<button class="accordion">Which is the Best Shampoo for Hair Regrowth ? <i class="fas fa-chevron-down fa-lg"></i> </button>
+<div class="panel">
+  <p>
+    Onion Oil, rich in Sulphur, Potassium & antioxidants, reduces hair fall & accelerates hair regrowth. One of the newest breakthrough ingredients in hair regrowth, Redensyl, unblocks hair follicles & also boosts new hair growth.
+    </p>
+</div>
+<button class="accordion">Which Shampoo is Best For Oily Hair ? <i class="fas fa-chevron-down fa-lg"></i> </button>
+<div class="panel">
+  <p>Healthline's picks for the best shampoo for oily hair
+    Neutrogena Anti-Residue Shampoo. ...
+    Aveeno Apple Cider Vinegar Blend Shampoo. ...
+    OGX Hydrating + Tea Tree Mint Conditioner. ...
+    Aveda Rosemary Mint Weightless Conditioner. ...
+    Klorane Dry Shampoo with Nettle. ...
+    Desert Essence Lemon Tea Tree Shampoo.
+    </p>
+</div>
+
+<button class="accordion">Can I use Mama Earth Shampoo after Hair Treatment ? <i class="fas fa-chevron-down fa-lg"></i> </button>
+<div class="panel">
+  <p>Yes of course! The best shampoo for hair in India when it comes to chemically treated hair is by Mamaearth. All Mamaearth Shampoos are crafted with natural ingredients and hence suit all hair types.
+</p>
+</div>
+</div>
+<div id="footer">
+    <div class="footer">
+      <div class="first">
+          <div id="first1">  <i class="fas fa-shipping-fast fa-2x"></i> <p class="t1">Free Shipping</p> <br> <p class="t2">On Orders Above Rs. 399 </p></div>
+          <div class="first2"> <i class="fas fa-wallet fa-2x"></i><p class="Txt">COD Available</p> <br> <p class="T2"> @ Rs. 40 Per Order </p> </div>
+           <div class="first3"> Have Queries or Concerns? <br> <button id="contactHome">CONTACT US</button> </div>
+      </div>
+      <div class="first"> <img src="/other/second.png"> </div>
+      <div class="third">
+          <ul>
+              <li class="capital">USEFUL LINKS</li>
+              <li class="small">Privacy Policy</li>
+              <li class="small">Returns</li>
+              <li class="small">Terms & Conditions </li>
+              <li class="small">Terms & Condition-Cashback</li>
+              <li class="small">FAQS</li>
+              <li class="small">We're Safe</li>
+              <li class="small">Track Order</li>
+              <li class="small">Contact Us</li>
+              <li class="small">Sitemap</li>
+              <li class="small">About Us</li>
+          </ul>
+  
+          <ul>
+              <li class="capital">CATEGORIES</li>
+              <li class="small">Baby</li>
+              <li class="small">Beauty</li>
+              <li class="small">Hair</li>
+              <li class="small">Face</li>
+              <li class="small">Body</li>
+              <li class="small">Gift Pack</li>
+          </ul>
+  
+          <ul>
+              <li class="capital">MY ACCOUNT</li>
+              <li class="small">Account</li>
+              <li class="small">Orders</li>
+              <li class="small">Address</li>
+          </ul>
+  
+          <img id="news" src="https://mamaearthp.imgix.net/wysiwyg/Best-Brand500x5002x.png?auto=format"/>
+      </div>
+      <div class="FOUR" id="four">SHOW US SOME <i class="fas fa-heart fa-lg"></i>  ON SOCIAL MEDIA <br> <i class="fab fa-facebook fa-lg"></i> 
+           <i class="fab fa-twitter fa-lg"></i> <i class="fab fa-instagram fa-lg"></i> <i class="fab fa-youtube fa-lg"></i> 
+           <i class="fab fa-pinterest fa-lg"></i>  <i class="fas fa-envelope fa-lg"></i> </div>
+      <div class="five">© 2021 Honasa Consumer Pvt. Ltd. All Rights Reserved</div>
+   </div>
+  </div>
+</html>
+<script >
+    
+    // ======================================importing Navbar===================================//
+ 
+    
+   ///=============================================================adding Accordion==========================================//
+   var acc = document.getElementsByClassName("accordion");
+   var i;
+ 
+  for (i = 0; i < acc.length; i++) {
+   acc[i].addEventListener("click", function() {
+     this.classList.toggle("active");
+     var panel = this.nextElementSibling;
+     if (panel.style.display === "block") {
+       panel.style.display = "none";
+     } else {
+       panel.style.display = "block";
+     }
+   });
+ }
+  
+ 
+   
+ 
+     let lcl = JSON.parse(localStorage.getItem('userDetail'))
+ let loggedName = document.getElementById("changingName")   
+ console.log(lcl)
+ 
+ if(lcl != null){
+   let nme = (lcl[0].userName)
+   loggedName.innerHTML = ""
+   loggedName.innerHTML = `<span class="iconify" data-icon="bytesize:user"></span>${nme}`
+ }
+ </script>
+
+<script >
+//     function sendDATA(products){
+// const  data = JSON.parse(products);
+//   console.log(data);
+
+ 
+//  showProducts(data);
+//     }
+   
+var data = JSON.parse(localStorage.getItem("mamaEarthProducts"));
+// var data = JSON.parse(localStorage.getItem("mamaEarthProducts")) || [];
+console.log(data);
+var main = document.getElementById("main");
+
+showProducts(data);
+function showProducts(data){
+    main.innerHTML = "";
+        data.forEach(item => {
+            main.innerHTML += 
+            `
+            <div class="card">
+            <div  onclick = "individualprod('${item.title}')">
+                <div class="tagsName tag">Best Seller</div>
+                <img src="${item.imgUrl[0]}">
+                <h1 >${item.title}</h1>
+                <h4>${item.rating}<span class="iconify" data-icon="dashicons:star-filled"></span></h4>
+                <h3><span class="iconify" data-icon="icons8:rupee"></span>${item.price}</h3>
+                </div>
+                <button onclick = "addToCart('${item._id}')">Add to Cart</button>
+             </div>
+            `
+           
+        });
+        
+              // var iPpage = main.title;
+        // main.addEventListener("click",function (){
+        //     redirectToIndiProduct(iPpage);
+        //     console.log(data.title);
+        //   });
+    }
+ //=================== Display Products from local Storage END=============================//    
+
+ //======================= Add Products To Cart Start==================================//
+
+//  var userdetails = JSON.parse.localStorage.getItem("userDetails");
+
+function individualprod(title){
+    console.log(title)
+    redirectToIndiProduct(title);
+}
+
+ var cart = [];
+
+//  console.log(userDetails);
+let m  = JSON.parse(localStorage.getItem('CartItems')) || []
+
+let counter = JSON.parse(localStorage.getItem('the_counter')) || []
+var count = 0
+ function addToCart(id){
+     console.log(id);
+
+     var userDetails = JSON.parse(localStorage.getItem("userDetail"));
+//  console.log(userDetails);
+    //  console.log(userDetails[0].email);
+
+     var e = userDetails[0].email;
+     
+     var obj = {
+         userEmail: e,
+         productId: id,
+     }
+
+     m.push(obj)
+ localStorage.setItem("CartItems",JSON.stringify(m))//{userEmail: "1@gmail.com", productId: "ME02105"}
+ count++
+ counter = counter + count 
+ localStorage.setItem('the_counter',JSON.stringify(counter))
+ alert("Successfully added to Cart !!")
+
+ }
+
+//============================ Add Products To Cart End=================================// 
+
+ //================================= Sort function=========================================//
+ 
+ function sortBy()
+        {
+            
+            var temp = document.getElementById("sortByValue").value;
+            if(temp == "low")
+                {
+                    var sorted = data;
+                    sorted.sort(function (a,b)
+                     {
+                       return a.price - b.price;
+                    });
+                    showProducts(sorted);
+                }
+           else if(temp == "high")
+                {
+                    var sorted = data;
+                    sorted.sort(function (a,b)
+                     {
+                        return b.price - a.price;
+                    });
+                   showProducts(sorted);
+                }
+            else if(temp == "rate")
+            {
+                var sorted = data;
+                sorted.sort(function (a,b)
+                {
+                    return b.rating - a.rating;
+                });
+            showProducts(sorted);
+            }
+            else if(temp == "default")
+                {
+                    showProducts(data);
+                    
+                }
+            
+        }
+
+        let lclStr = JSON.parse(localStorage.getItem('userDetail'))
+
+        function redirectToIndiProduct(title){
+            console.log(title);   
+            
+            if(lclStr == null){
+                alert('Please Login to Continue')
+                window.location.href = "/signup/mama"
+              }else{
+                localStorage.setItem("inProPage", JSON.stringify(title));  
+             window.location.href = "/Iprod/mama"
+            }
+          }
+      
+    
+</script>
