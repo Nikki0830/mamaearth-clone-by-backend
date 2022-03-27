@@ -35,3 +35,7 @@ This is a clone of www.mamaearth.in website made using HTML, CSS and EJS. It's a
 7-Payment-Page
 
 ![paymentPage](https://user-images.githubusercontent.com/84259086/146634491-01b8e92d-536e-43e5-8fa4-c8aa4bff8699.PNG)
+
+7-Last-Page
+
+![Screenshot (728)](https://user-images.githubusercontent.com/69712671/160266161-7b11635d-2237-46f4-a9c4-10908b48893d.png)
